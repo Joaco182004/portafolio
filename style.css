@@ -138,6 +138,62 @@ a{
 .hamburgue-btn{
     display: none;
 }
+.menu{
+    width: 100vw;
+    height: 100vh;
+    background:rgb(15, 15, 15);
+    position: fixed;
+    z-index: 11;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu .main-nav-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu .main-nav-list li{
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color2);
+    margin:0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.close{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 10px;
+    cursor: pointer;
+    right: 10px;
+}
+.close::before{
+    content: '';
+    width: 7.5px;
+    height: 40px;
+    background-color: #fff;
+    position: absolute;
+    rotate: 45deg;
+    right: 17px;
+    top: -4px;
+    border-radius: 2rem;
+}
+.close::after{
+    content: '';
+    width: 7.5px;
+    height: 40px;
+    background-color: #fff;
+    position: absolute;
+    rotate: 135deg;
+    right: 17px;
+    top: -4px;
+    border-radius: 2rem;
+  
+}
 .home{
     display: flex;
     flex-direction: column;
@@ -338,6 +394,7 @@ a{
     flex-wrap: wrap;
     gap: 15px;
     width: 90vw;
+    justify-content: center;
 }
 .content-line-time{
     width: 350px;
@@ -451,6 +508,44 @@ a{
     top: 240px;
     animation: appear 10s;
 }
+.objectives-cont{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    height: 300px;
+    width: 500px;
+}
+.objective{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin: 1rem;
+}
+.objective h3{
+    color: greenyellow;
+}
+.objective h4{
+    color: #fff;
+}
+#experiences-content > div.objectives-cont > div:nth-child(1){
+    animation: appear 11s;
+}
+#experiences-content > div.objectives-cont > div:nth-child(3){
+    animation: appear 12s;
+}
+#experiences-content > div.objectives-cont > div:nth-child(2){
+    animation: appear 13s;
+}
+#experiences-content > div.objectives-cont > div:nth-child(4){
+    animation: appear 14s;
+}
 @keyframes impact{
     50%{
         scale: 1.1;   
@@ -533,7 +628,7 @@ a{
         align-items: center;
         background-color: #fff;
         color: black;
-        margin-right: 1rem;
+        margin-right: 2rem;
         font-size: 1.25rem;
         cursor: pointer;
     }
@@ -548,6 +643,9 @@ a{
     #about{
         height: auto !important;
         max-height: none;
+    }
+    .experiences-content{
+        width: 100vw;
     }
 }
 @media screen and (max-width:779px){
@@ -578,13 +676,14 @@ a{
         font-size: 2rem;
         text-align: center;
     }
-   
+    
 }
 @media screen and (max-width:513px){
     #about > div.info > div.info-img > div{
         width: 270px;
         height: 320px;
     }
+
 }
 @media screen and (max-width:430px){
    
@@ -598,11 +697,26 @@ a{
     #experiences-content > div:nth-child(2){
         margin-left: 0.55rem;
     }
+      .objective{
+        padding: 0;
+        margin: 1rem;
+        width:170px;
+        height: 90px;
+        text-align: center;
+        
+    }
 }
 @media screen and (max-width:400px){
    
     
     #experiences-content > div:nth-child(2){
         margin-left: 0;
+    }
+    .objective{
+        padding: 0;
+        margin: 0.5;
+        width: 150px;
+        text-align: center;
+        
     }
 }
