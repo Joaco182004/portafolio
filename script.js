@@ -4,6 +4,10 @@ const experience_btn=document.getElementById('experiences-btn')
 const skills_btn=document.getElementById('skills-btn')
 const skills_cont=document.getElementById('skills-content')
 const experiences_cont=document.getElementById('experiences-content')
+const menu=document.getElementById('menu-mob')
+menu.classList.add('desaparecer')
+experiences_cont.classList.add('desaparecer')
+
 navbar.classList.remove('change')
 document.addEventListener("scroll",()=>{
   
@@ -45,3 +49,9 @@ skills_btn.addEventListener('click',()=>{
     skills_cont.classList.remove('desaparecer')
     experiences_cont.classList.add('desaparecer')
 })
+function openMenu(){
+    menu.classList.remove('desaparecer')
+}
+function closeMenu(){
+    menu.classList.add('desaparecer')
+}
