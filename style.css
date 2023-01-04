@@ -167,9 +167,9 @@ a{
     width: 40px;
     height: 40px;
     position: fixed;
-    top: 10px;
+    top: 20px;
     cursor: pointer;
-    right: 10px;
+    right: 20px;
 }
 .close::before{
     content: '';
@@ -699,9 +699,9 @@ a{
     }
       .objective{
         padding: 0;
+        width: 150px;
+        height: 110px;
         margin: 1rem;
-        width:170px;
-        height: 90px;
         text-align: center;
         
     }
@@ -714,7 +714,7 @@ a{
     }
     .objective{
         padding: 0;
-        margin: 0.5;
+        height: 120px;
         width: 150px;
         text-align: center;
         
