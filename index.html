@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <nav class="nav change" id="nav">
+        <div onclick="onTop()" class="logo">
+            <div>
+                <h3>J</h3>
+            </div>
+        </div>
+        <div class="main-nav">
+            <ul class="main-nav-list">
+                <li><a onclick="onTop()">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a>Portafolio</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </div>
+        <div class="last-nav">
+            <ul class=last-nav-list>
+                <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="hamburgue-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <main class="main">
+        <section id="home" class="home">
+            <div class="home-img">
+                <img src="src/imgs/personal-img.jfif" alt="">
+            </div>
+            <div class="home-presentation">
+                <h3 class="saludo">Hola soy <span>Joaquin Diaz</span></h3>
+                <p><span class="profession"></span> de Perú </p>
+            </div>
+            <div class="home-description">
+                <h1>Apasionado en crear productos web innovadores</h1>
+            </div>
+            <a id="contact-btn">
+                Contáctate conmigo
+            </a>
+        </section>
+        <section id="about" class="about">
+            <div class="about-header">
+                <p>¿Quien soy?</p>
+                <h2>About me</h2>
+            </div>
+            <div class="info">
+                <div class="info-img">
+                    <div class="info-img-content">
+                        <img src="src/imgs/personal-img.jfif">
+                    </div>
+                  
+                </div>
+                <div class="info-text">
+                    <p>Me gustaría poder gozar de la oportunidad de participar de manera profesional en el ámbito laboral de mi carrera ya que me considero una persona excelente para la colaboración en equipo, distribución de tareas, búsqueda de soluciones y diferentes habilidades y aptitudes acordes con el área en el que deseo desenvolverme. Por otro lado, me considero un excelente alumno y con el deseo de aprender muchísimo más, no me considero una persona conformista y siempre aprovecho cada oportunidad que me brindan. Durante mi carrera he podido destacarme en las labores de desarrollo y trabajo en equipo.</p>
+                    <div class="list-info">
+                        <ul>
+                            <li><span class="circle"></span><i class="fa-solid fa-user"></i>Joaquin Diaz Chau</li>
+                            <li><span class="circle"></span><i class="fa-solid fa-phone"></i>+51 991 223 007</li>
+                            <li><span class="circle"></span><i class="fa-solid fa-envelope"></i>joaquindiazchau@gmail.com</li>
+                        </ul>
+                        
+                    </div>
+              
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="skills-header">
+                <p>Mis espcialidades</p>
+                <h2>Skills And Experiences</h2>
+            </div>
+            <div class="btn-skill">
+                <button class="active-btn" id="skills-btn">Skills</button>
+                <button  id="experiences-btn">Experiences</button>
+            </div>
+            <div class="skills-content" id="skills-content">
+               <div class="skills-personal">
+                    <img src="./src/imgs/html.png">
+                    <p>HTML</p>
+               </div>
+                <div class="skills-personal">
+                    <img src="./src/imgs/css-3.png">
+                    <p>CSS</p>
+               </div>
+               <div class="skills-personal">
+                <img src="./src/imgs/js.png">
+                <p>JAVASCRIPT</p>
+                </div>
+                <div class="skills-personal">
+                    <img src="./src/imgs/angular.png">
+                    <p>ANGULAR</p>
+               </div>
+               <div class="skills-personal">
+                <img src="./src/imgs/typescript.png">
+                <p>TYPESCRIPT</p>
+                </div>
+                <div class="skills-personal">
+                    <img src="./src/imgs/mysql.png">
+                    <p>MYSQL</p>
+                </div>
+                <div class="skills-personal">
+                    <img src="./src/imgs/progrest.png">
+                    <p>PROGRESS</p>
+                </div>
+                <div class="skills-personal">
+                    <img src="./src/imgs/mongodb.png">
+                    <p>MONGODB</p>
+                </div>
+                <div class="skills-personal">
+                    <img src="./src/imgs/java.png">
+                    <p>JAVA</p>
+                </div>
+                <div class="skills-personal">
+                    <img src="./src/imgs/c-sharp.png">
+                    <p>C#</p>
+                </div>
+                <div class="skills-personal">
+                    <img src="./src/imgs/c-.png">
+                    <p>C++</p>
+                </div>
+            </div>
+            <div class="experiences-content desaparecer" id="experiences-content">
+                <div class="content-line-time">
+                    <div class="line-time">
+                        <div class="bolitas uno"><b>2022</b></div>
+                        <div class="bolitas dos"><b>2022</b></div>
+                        <div class="bolitas tres"><b>2022</b></div>
+                        <div class="exp expone">
+                            <h4>Licenciatura de Ingeniería de Sistemas</h4>
+                            <p>UPC</p>
+                            
+                        </div>
+                        <div class="exp expotwo">
+                            <h4>Licenciatura de Ingeniería de Sistemas</h4>
+                            <p>UPC</p>
+                        </div>
+                        <div class="exp expothree">
+                            <h4>Licenciatura de Ingeniería de Sistemas</h4>
+                            <p>UPC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-line-time">
+                    <div class="line-time two-time">
+                        <div class="bolitas diferentone"><b>2022</b></div>
+                        <div class="bolitas diferenttwo"><b>2022</b></div>
+                        <div class="bolitas diferentthree"><b>2022</b></div>
+                        <div class="exp expofour">
+                            <h4>Licenciatura de Ingeniería de Sistemas</h4>
+                            <p>UPC</p>
+                            
+                        </div>
+                        <div class="exp expofive">
+                            <h4>Licenciatura de Ingeniería de Sistemas</h4>
+                            <p>UPC</p>
+                        </div>
+                        <div class="exp exposix">
+                            <h4>Licenciatura de Ingeniería de Sistemas</h4>
+                            <p>UPC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="objectives">
+
+                </div>
+              
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
