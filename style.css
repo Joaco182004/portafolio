@@ -685,6 +685,12 @@ a{
     }
 
 }
+@media screen and (max-width:500px) {
+    .objectives-cont{
+        width: 400px;
+    }
+    
+}
 @media screen and (max-width:430px){
    
     #experiences-content > div:nth-child(2){
