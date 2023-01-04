@@ -34,7 +34,7 @@
             </ul>
         </div>
         <div class="hamburgue-btn">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </div>
     </nav>
     <main class="main">
@@ -175,13 +175,38 @@
                         </div>
                     </div>
                 </div>
-                <div class="objectives">
-
+                <div class="objectives-cont">
+                    <div class="objective">
+                        <h3>0</h3>
+                        <h4>Años de Experiencia</h4>
+                    </div> 
+                    <div class="objective">
+                        <h3>0</h3>
+                        <h4>Clientes Satisfechos</h4>
+                    </div>
+                    <div class="objective">
+                        <h3>0</h3>
+                        <h4>Articulos Diseñados</h4>
+                    </div>
+                    <div class="objective">
+                        <h3>0</h3>
+                        <h4>Clientes Atendidos</h4>
+                    </div>
                 </div>
               
             </div>
         </section>
     </main>
+    <div class="menu" id="menu-mob">
+        <ul class="main-nav-list">
+            <li><a onclick="onTop();closeMenu()">Home</a></li>
+            <li><a onclick="closeMenu()" href="#about">About</a></li>
+            <li><a onclick="closeMenu()"  href="#skills">Skills</a></li>
+            <li><a onclick="closeMenu()" >Portafolio</a></li>
+            <li><a onclick="closeMenu()" >Contact</a></li>
+        </ul>
+        <div class="close" onclick="closeMenu()"></div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="./script.js"></script>
 </body>
