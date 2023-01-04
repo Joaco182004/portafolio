@@ -550,8 +550,38 @@ a{
         max-height: none;
     }
 }
+@media screen and (max-width:779px){
+    #experiences-content{
+        display: flex;
+        justify-content: center;
+    }
+    #experiences-content > div:nth-child(2){
+        margin-left: 1rem;
+    }
+}
 @media screen and (max-width:614px){
     #home > div.home-description > h1{
         font-size: 3.5rem;
+    }
+}
+@media screen and (max-width:541px){
+    h2{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:513px){
+    #home > div.home-description > h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+   
+}
+@media screen and (max-width:513px){
+    #about > div.info > div.info-img > div{
+        width: 270px;
+        height: 320px;
     }
 }
