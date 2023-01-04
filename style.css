@@ -361,7 +361,7 @@ a{
     animation-delay: 6s;
 }
 .desaparecer{
-    display: none;
+    display: none !important;
 }
 .bolitas{
     width: 15px;
@@ -563,6 +563,7 @@ a{
     #home > div.home-description > h1{
         font-size: 3.5rem;
     }
+   
 }
 @media screen and (max-width:541px){
     h2{
@@ -583,5 +584,25 @@ a{
     #about > div.info > div.info-img > div{
         width: 270px;
         height: 320px;
+    }
+}
+@media screen and (max-width:430px){
+   
+    #experiences-content > div:nth-child(2){
+        margin-left: 0.75rem;
+    }
+}
+@media screen and (max-width:415px){
+   
+    
+    #experiences-content > div:nth-child(2){
+        margin-left: 0.55rem;
+    }
+}
+@media screen and (max-width:400px){
+   
+    
+    #experiences-content > div:nth-child(2){
+        margin-left: 0;
     }
 }
